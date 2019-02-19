@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCrawler.Sample", "DotnetCrawler.Sample\DotnetCrawler.Sample.csproj", "{3145760F-72E9-4D75-B4E6-2286374B6A4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCrawler.Data", "DotnetCrawler.Data\DotnetCrawler.Data.csproj", "{DC7E573A-6BC6-4E1F-9CF5-4D0C93B4864C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3145760F-72E9-4D75-B4E6-2286374B6A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3145760F-72E9-4D75-B4E6-2286374B6A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3145760F-72E9-4D75-B4E6-2286374B6A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7E573A-6BC6-4E1F-9CF5-4D0C93B4864C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7E573A-6BC6-4E1F-9CF5-4D0C93B4864C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7E573A-6BC6-4E1F-9CF5-4D0C93B4864C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7E573A-6BC6-4E1F-9CF5-4D0C93B4864C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
