@@ -9,4 +9,8 @@
     <PackageReference Include="HtmlAgilityPack.CssSelectors.NetCore" Version="1.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetCrawler.Request\DotnetCrawler.Request.csproj" />
+  </ItemGroup>
+
 </Project>
