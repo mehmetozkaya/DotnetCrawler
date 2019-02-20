@@ -21,10 +21,6 @@ namespace DotnetCrawler.Processor
                 ReflectionHelper.TrySetProperty(processorEntity, pair.Key, pair.Value);
             }
 
-            // TODO : Remove
-            ReflectionHelper.TrySetProperty(processorEntity, "CatalogTypeId", 1);
-            ReflectionHelper.TrySetProperty(processorEntity, "CatalogBrandId", 1);
-
             return new List<TEntity>
             {
                 processorEntity as TEntity
