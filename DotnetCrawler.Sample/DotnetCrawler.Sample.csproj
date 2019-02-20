@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotnetCrawler.Core\DotnetCrawler.Core.csproj" />
     <ProjectReference Include="..\DotnetCrawler.Data\DotnetCrawler.Data.csproj" />
   </ItemGroup>
 

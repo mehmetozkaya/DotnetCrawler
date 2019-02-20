@@ -54,7 +54,7 @@ namespace DotnetCrawler.Core
             return this;
         }
 
-        public Task Crawle()
+        public async Task Crawle()
         {
             var linkReader = new DotnetCrawlerPageLinkReader(Request);
             var links = await linkReader.GetLinks(Request.Url, 0);
