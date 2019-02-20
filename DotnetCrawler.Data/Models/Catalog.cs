@@ -9,9 +9,12 @@ namespace DotnetCrawler.Data.Models
     public partial class Catalog : IEntity
     {
         public int Id { get; set; }
+        [DotnetCrawlerField(Expression = "1", SelectorType = SelectorType.FixedValue)]
         public int CatalogBrandId { get; set; }
-        public int CatalogTypeId { get; set; }
+        [DotnetCrawlerField(Expression = "1", SelectorType = SelectorType.FixedValue)]
+        public int CatalogTypeId { get; set; }        
         public string Description { get; set; }
+        [DotnetCrawlerField(Expression = "//*[@id='itemTitle']/text()", SelectorType = SelectorType.XPath)]
         public string Name { get; set; }
         public string PictureUri { get; set; }
         public decimal Price { get; set; }

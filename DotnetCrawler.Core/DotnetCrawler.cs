@@ -66,12 +66,5 @@ namespace DotnetCrawler.Core
                 await Pipeline.Run(entity);
             }
         }
-
-
-
-        // TODO : Remove
-        //ReflectionHelper.TrySetProperty(processorEntity, "CatalogTypeId", 1);
-        //ReflectionHelper.TrySetProperty(processorEntity, "CatalogBrandId", 1);
-
     }
 }

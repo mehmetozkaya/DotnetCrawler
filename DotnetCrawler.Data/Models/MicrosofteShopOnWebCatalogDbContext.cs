@@ -53,11 +53,12 @@ namespace DotnetCrawler.Data.Models
 
                 entity.HasIndex(e => e.CatalogTypeId);
 
-                entity.Property(e => e.Id).ValueGeneratedNever();
+                //entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.Property(e => e.Id).ForSqlServerUseSequenceHiLo("catalog_hilo").IsRequired();
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(50);
+                    .HasMaxLength(200);
 
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
 

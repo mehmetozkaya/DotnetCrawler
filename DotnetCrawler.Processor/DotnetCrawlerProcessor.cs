@@ -27,9 +27,9 @@ namespace DotnetCrawler.Processor
             };
         }
 
-        private static Dictionary<string, string> GetColumnNameValuePairsFromHtml(HtmlDocument document)
+        private static Dictionary<string, object> GetColumnNameValuePairsFromHtml(HtmlDocument document)
         {
-            var columnNameValueDictionary = new Dictionary<string, string>();
+            var columnNameValueDictionary = new Dictionary<string, object>();
 
             var entityExpression = ReflectionHelper.GetEntityExpression<TEntity>();
             var propertyExpressions = ReflectionHelper.GetPropertyAttributes<TEntity>();
@@ -39,7 +39,7 @@ namespace DotnetCrawler.Processor
             foreach (var expression in propertyExpressions)
             {
                 var columnName = expression.Key;
-                var columnValue = string.Empty;
+                object columnValue = null;
                 var fieldExpression = expression.Value.Item2;
 
                 switch (expression.Value.Item1)
@@ -54,10 +54,15 @@ namespace DotnetCrawler.Processor
                         if (nodeCss != null)
                             columnValue = nodeCss.InnerText;
                         break;
+                    case SelectorType.FixedValue:
+                        if (Int32.TryParse(fieldExpression, out var result))
+                        {
+                            columnValue = result;
+                        }
+                        break;
                     default:
                         break;
                 }
-
                 columnNameValueDictionary.Add(columnName, columnValue);
             }
 

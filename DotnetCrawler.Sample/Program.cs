@@ -14,20 +14,21 @@ namespace DotnetCrawler.Sample
     {
         static void Main(string[] args)
         {
-            MainAsync(args).Wait();           
+            MainAsync(args).Wait();
         }
 
         static async Task MainAsync(string[] args)
-        {
-            var crawleUrl = "https://www.ebay.com/b/Apple-iPhone/9355/bn_319682";
-
+        {            
             var crawler = new DotnetCrawler<Catalog>()
-                                 .AddRequest(new DotnetCrawlerRequest { Url = crawleUrl, Regex = @".*itm/.+", TimeOut = 5000 })
+                                 .AddRequest(new DotnetCrawlerRequest { Url = "https://www.ebay.com/b/Apple-iPhone/9355/bn_319682", Regex = @".*itm/.+", TimeOut = 5000 })
                                  .AddDownloader(new DotnetCrawlerDownloader { DownloderType = DotnetCrawlerDownloaderType.FromMemory, DownloadPath = @"C:\DotnetCrawlercrawler\" })
                                  .AddProcessor(new DotnetCrawlerProcessor<Catalog> { })
                                  .AddPipeline(new DotnetCrawlerPipeline<Catalog> { });
 
             await crawler.Crawle();
+
+
+            //ArgumentException: Object of type 'System.String' cannot be converted to type 'System.Int32'.
         }
     }
 }
