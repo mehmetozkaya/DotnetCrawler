@@ -1,4 +1,6 @@
 ﻿using DotnetCrawler.Data.Repository;
+using DotnetCrawler.Downloader;
+using DotnetCrawler.Request;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,8 +10,8 @@ namespace DotnetCrawler.Core
 {
     public class DotnetCrawler<TEntity> : IDotnetCrawler where TEntity : class, IEntity
     {
-        //public IDotnetCrawlerRequest Request { get; private set; }
-        //public IDotnetCrawlerDownloader Downloader { get; private set; }
+        public IDotnetCrawlerRequest Request { get; private set; }
+        public IDotnetCrawlerDownloader Downloader { get; private set; }
         //public IDotnetCrawlerProcessor<TEntity> Processor { get; private set; }
         //public IDotnetCrawlerScheduler Scheduler { get; private set; }
         //public IDotnetCrawlerPipeline<TEntity> Pipeline { get; private set; }
