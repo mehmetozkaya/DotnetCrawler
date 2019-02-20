@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCrawler.Processor", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCrawler.Scheduler", "DotnetCrawler.Scheduler\DotnetCrawler.Scheduler.csproj", "{D88EB02D-27E3-444F-A278-1EE370490EA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCrawler.Pipeline", "DotnetCrawler.Pipeline\DotnetCrawler.Pipeline.csproj", "{08E20EF5-6CA0-42E6-B532-10B1D080E807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D88EB02D-27E3-444F-A278-1EE370490EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D88EB02D-27E3-444F-A278-1EE370490EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D88EB02D-27E3-444F-A278-1EE370490EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E20EF5-6CA0-42E6-B532-10B1D080E807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E20EF5-6CA0-42E6-B532-10B1D080E807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E20EF5-6CA0-42E6-B532-10B1D080E807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E20EF5-6CA0-42E6-B532-10B1D080E807}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
