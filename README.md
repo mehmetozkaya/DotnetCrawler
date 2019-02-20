@@ -1,8 +1,10 @@
 # DotnetCrawler
-Lightweight scale dotnet crawler for Entity Framework Core pipeline.
+DotnetCrawler is a straightforward, lightweight web crawling/scrapying library for Entity Framework Core output based on dotnet core.
+This library designed like other strong crawler libraries like WebMagic and Scrapy but for enabling extandable your custom requirements. 
 
 ## Getting Started
 
+This project intented for providing EF.Core insert but it has very scale architecture in order to implement your custom scenarios.
 This project intented for code generate with using command prompt like svcutil.exe. As an interface development, after creating proxy class with svcutil.exe, most of time required to write mapping codes for calling web service. This project provide that generate mapping codes automaticly.
 
 ### Usage
