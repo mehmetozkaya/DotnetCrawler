@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DotnetCrawler.Data.Repository;
+using System;
 using System.Collections.Generic;
 
 namespace DotnetCrawler.Data.Models
 {
-    public partial class CatalogType
+    public partial class CatalogType : IEntity
     {
         public CatalogType()
         {

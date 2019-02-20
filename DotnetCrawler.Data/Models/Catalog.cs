@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DotnetCrawler.Data.Repository;
+using System;
 using System.Collections.Generic;
 
 namespace DotnetCrawler.Data.Models
 {
-    public partial class Catalog
+    public partial class Catalog : IEntity
     {
         public int Id { get; set; }
         public int CatalogBrandId { get; set; }

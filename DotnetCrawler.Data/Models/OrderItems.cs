@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DotnetCrawler.Data.Repository;
+using System;
 using System.Collections.Generic;
 
 namespace DotnetCrawler.Data.Models
 {
-    public partial class OrderItems
+    public partial class OrderItems : IEntity
     {
         public int Id { get; set; }
         public int? OrderId { get; set; }

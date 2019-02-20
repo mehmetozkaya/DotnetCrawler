@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DotnetCrawler.Processor
 {
-    public class DotnetCrawlerProcessor<TEntity> where TEntity : class, IEntity
+    public class DotnetCrawlerProcessor<TEntity> : IDotnetCrawlerProcessor<TEntity> where TEntity : class, IEntity
     {
         public async Task<IEnumerable<TEntity>> Process(HtmlDocument document)
         {
