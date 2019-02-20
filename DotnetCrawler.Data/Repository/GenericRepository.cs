@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DotnetCrawler.Data.Repository
 {
+    //used this resources : https://codingblast.com/entity-framework-core-generic-repository/
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class, IEntity
     {
         private readonly MicrosofteShopOnWebCatalogDbContext _dbContext;

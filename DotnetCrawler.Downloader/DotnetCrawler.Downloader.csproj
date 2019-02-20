@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.9.0" />
+    <PackageReference Include="HtmlAgilityPack.CssSelectors.NetCore" Version="1.1.1" />
+  </ItemGroup>
+
 </Project>
