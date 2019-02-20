@@ -1,5 +1,5 @@
-﻿using DotnetCrawler.Data.Repository;
-using DotnetCrawler.Processor.Attributes;
+﻿using DotnetCrawler.Data.Attributes;
+using DotnetCrawler.Data.Repository;
 using HtmlAgilityPack;
 using HtmlAgilityPack.CssSelectors.NetCore;
 using System;

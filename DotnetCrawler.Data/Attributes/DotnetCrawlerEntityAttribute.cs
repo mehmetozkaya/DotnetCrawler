@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DotnetCrawler.Processor.Attributes
+namespace DotnetCrawler.Data.Attributes
 {
     public class DotnetCrawlerEntityAttribute : Attribute
     {
