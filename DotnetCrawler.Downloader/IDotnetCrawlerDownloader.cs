@@ -10,7 +10,6 @@ namespace DotnetCrawler.Downloader
     {
         DotnetCrawlerDownloaderType DownloderType { get; set; }
         string DownloadPath { get; set; }
-
         Task<HtmlDocument> Download(string crawlUrl);
     }
 }
