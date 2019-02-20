@@ -12,9 +12,9 @@ namespace DotnetCrawler.Data.Repository
     {
         private readonly MicrosofteShopOnWebCatalogDbContext _dbContext;
 
-        public GenericRepository(MicrosofteShopOnWebCatalogDbContext dbContext)
+        public GenericRepository()
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _dbContext = new MicrosofteShopOnWebCatalogDbContext();            
         }
 
         public IQueryable<TEntity> GetAll()
