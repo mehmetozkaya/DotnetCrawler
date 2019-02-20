@@ -4,9 +4,6 @@ using DotnetCrawler.Pipeline;
 using DotnetCrawler.Processor;
 using DotnetCrawler.Request;
 using DotnetCrawler.Scheduler;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DotnetCrawler.Core

@@ -11,6 +11,7 @@ namespace DotnetCrawler.Scheduler
 
         public Task Schedule()
         {
+            // TODO : Implement Quartz or Hangfire
             throw new NotImplementedException();
         }
     }

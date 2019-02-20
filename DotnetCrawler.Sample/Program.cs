@@ -26,9 +26,6 @@ namespace DotnetCrawler.Sample
                                  .AddPipeline(new DotnetCrawlerPipeline<Catalog> { });
 
             await crawler.Crawle();
-
-
-            //ArgumentException: Object of type 'System.String' cannot be converted to type 'System.Int32'.
         }
     }
 }
