@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetCrawler.Data\DotnetCrawler.Data.csproj" />
+    <ProjectReference Include="..\DotnetCrawler.Downloader\DotnetCrawler.Downloader.csproj" />
+    <ProjectReference Include="..\DotnetCrawler.Pipeline\DotnetCrawler.Pipeline.csproj" />
+    <ProjectReference Include="..\DotnetCrawler.Processor\DotnetCrawler.Processor.csproj" />
+    <ProjectReference Include="..\DotnetCrawler.Request\DotnetCrawler.Request.csproj" />
+    <ProjectReference Include="..\DotnetCrawler.Scheduler\DotnetCrawler.Scheduler.csproj" />
+  </ItemGroup>
+
 </Project>
