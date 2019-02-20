@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DotnetCrawler.Processor.Attributes;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -9,7 +11,7 @@ namespace DotnetCrawler.Processor
     {
         internal static string GetEntityExpression<TEntity>()
         {
-            var entityAttribute = (typeof(TEntity)).GetCustomAttribute<CaldwellEntityAttribute>();
+            var entityAttribute = (typeof(TEntity)).GetCustomAttribute<DotnetCrawlerEntityAttribute>();
             if (entityAttribute == null || string.IsNullOrWhiteSpace(entityAttribute.XPath))
                 throw new Exception("This entity should be xpath");
 
@@ -25,7 +27,7 @@ namespace DotnetCrawler.Processor
 
             foreach (PropertyInfo prop in propList)
             {
-                var attr = prop.GetCustomAttribute<CaldwellFieldAttribute>();
+                var attr = prop.GetCustomAttribute<DotnetCrawlerFieldAttribute>();
                 if (attr != null)
                 {
                     attributeDictionary.Add(prop.Name, Tuple.Create(attr.SelectorType, attr.Expression));

@@ -4,8 +4,9 @@ using System.Text;
 
 namespace DotnetCrawler.Processor.Attributes
 {
-    public class DotnetCrawlerEntityAttribute : Attribute
+    public enum SelectorType
     {
-        public string XPath { get; set; }
-    }    
+        XPath,
+        CssSelector
+    }
 }
