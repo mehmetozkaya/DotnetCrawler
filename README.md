@@ -4,16 +4,27 @@ This library designed like other strong crawler libraries like WebMagic and Scra
 
 ## Getting Started
 
-This project intented for providing EF.Core insert but it has very scale architecture in order to implement your custom scenarios.
-This project intented for code generate with using command prompt like svcutil.exe. As an interface development, after creating proxy class with svcutil.exe, most of time required to write mapping codes for calling web service. This project provide that generate mapping codes automaticly.
+This project intented for providing EF.Core database insert but it has very scale architecture in order to implement your custom scenarios. So the main design of architecture is very common for web crawler/scrapying frameworks, you can see below image.
+
+![alt text](https://raw.githubusercontent.com/dotnetcore/DotnetSpider/master/images/DESIGN.jpg)
+
+As per above image, in this library created project structures including DotnetCrawler.Request-Downloader-Processor-Pipeline projects. 
 
 ### Usage
 
-You can use exe file with cmd as below command in command prompt;
+You can use this library using DotnetCrawler class with builder pattern;
 
 ```
-InterfaceActivityBuilder.exe 'path'
+ var crawler = new DotnetCrawler<Catalog>()
+                                 .AddRequest(new DotnetCrawlerRequest { Url = "https://www.ebay.com/b/Apple-iPhone/9355/bn_319682", Regex = @".*itm/.+", TimeOut = 5000 })
+                                 .AddDownloader(new DotnetCrawlerDownloader { DownloderType = DotnetCrawlerDownloaderType.FromMemory, DownloadPath = @"C:\DotnetCrawlercrawler\" })
+                                 .AddProcessor(new DotnetCrawlerProcessor<Catalog> { })
+                                 .AddPipeline(new DotnetCrawlerPipeline<Catalog> { });
+
+await crawler.Crawle();
 ```
+With this code, first create your request which url want to consume in your Request object. In these request object you can also provide Regex expression in order to filter your web urls. Also can able to set Timeout.
+
 
 Example usage of exe;
 
