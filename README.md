@@ -1,7 +1,7 @@
 # DotnetCrawler
 DotnetCrawler is a straightforward, lightweight web crawling/scrapying library for Entity Framework Core output based on dotnet core.
 This library designed like other strong crawler libraries like WebMagic and Scrapy but for enabling extandable your custom requirements.
-You can find detail explanation of this library at ![medium in this link.](https://medium.com/@mehmetozkaya/creating-custom-web-crawler-with-dotnet-core-using-entity-framework-core-ec8d23f0ca7c)
+You can find detail explanation of this library at [medium in this link.](https://medium.com/@mehmetozkaya/creating-custom-web-crawler-with-dotnet-core-using-entity-framework-core-ec8d23f0ca7c)
 
 ## Getting Started
 
