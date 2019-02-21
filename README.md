@@ -193,6 +193,8 @@ This program only imported EF.Core and using default downloader-processor-pipeli
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+Medium : https://medium.com/@mehmetozkaya/creating-custom-web-crawler-with-dotnet-core-using-entity-framework-core-ec8d23f0ca7c
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
