@@ -9,5 +9,10 @@ namespace DotnetCrawler.Request
         public string Url { get; set; }
         public string Regex { get; set; }
         public long TimeOut { get; set; }
+
+        public DotnetCrawlerRequest(string url)
+        {
+            Url = url;
+        }
     }
 }
