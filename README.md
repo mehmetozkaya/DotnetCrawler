@@ -58,7 +58,7 @@ When run this code, first create your request which url want to consume in your 
 
 ### Example of eShopOnWeb Microsoft Project Usage
 
-This library also include example project which name is DotnetCrawler.Sample. Basically, in this sample project, implementing Microsoft eShopOnWeb repository. You can find this repo [here].(https://github.com/dotnet-architecture/eShopOnWeb)
+This library also include example project which name is DotnetCrawler.Sample. Basically, in this sample project, implementing Microsoft eShopOnWeb repository. You can find this repo [here](https://github.com/dotnet-architecture/eShopOnWeb).
 So in this example repo, implemented e-commerce project, it has "Catalog" table when you generate with EF.Core code-first approach.
 Passing "Catalog" table as a generic type in DotnetCrawler class.
 ```
