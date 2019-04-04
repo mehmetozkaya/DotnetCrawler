@@ -9,7 +9,7 @@ Medium : https://medium.com/@mehmetozkaya/creating-custom-web-crawler-with-dotne
 
 This project intented for providing EF.Core database insert but it has very scale architecture in order to implement your custom scenarios. So the main design of architecture is very common for web crawler/scrapying frameworks, you can see below image.
 
-![alt text](https://raw.githubusercontent.com/dotnetcore/DotnetSpider/master/images/DESIGN.jpg)
+![c45161e7-4721-4e4e-a33f-9925617a294f](https://user-images.githubusercontent.com/1147445/55534310-b8749800-56bc-11e9-913a-7e23ef745062.Jpeg)
 
 As per above image, in this library created project structures including DotnetCrawler.Request-Downloader-Processor-Pipeline projects. 
 
