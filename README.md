@@ -192,7 +192,6 @@ This program only imported EF.Core and using default downloader-processor-pipeli
 * **Mehmet Ozkaya** - *Initial work* - [mehmetozkaya](https://github.com/mehmetozkaya)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 Check also [github page.](https://mehmetozkaya.github.io/DotnetCrawler/)
 
 Medium : https://medium.com/@mehmetozkaya/creating-custom-web-crawler-with-dotnet-core-using-entity-framework-core-ec8d23f0ca7c
