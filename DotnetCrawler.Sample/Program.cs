@@ -21,7 +21,7 @@ namespace DotnetCrawler.Sample
         {            
             var crawler = new DotnetCrawler<Catalog>()
                                  .AddRequest(new DotnetCrawlerRequest { Url = "https://www.ebay.com/b/Apple-iPhone/9355/bn_319682", Regex = @".*itm/.+", TimeOut = 5000 })
-                                 .AddDownloader(new DotnetCrawlerDownloader { DownloderType = DotnetCrawlerDownloaderType.FromMemory, DownloadPath = @"C:\DotnetCrawlercrawler\" })
+                                 .AddDownloader(new DotnetCrawlerDownloader { DownloderType = DotnetCrawlerDownloaderType.FromMemory, DownloadPath = @"/Users/hamidba/Desktop/test" })
                                  .AddProcessor(new DotnetCrawlerProcessor<Catalog> { })
                                  .AddPipeline(new DotnetCrawlerPipeline<Catalog> { });
 
